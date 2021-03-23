@@ -11,10 +11,20 @@ public class BGScaler : MonoBehaviour
         float height = Camera.main.orthographicSize * 2f;
         // Breite berechnen
         float width = height * Screen.width / Screen.height;
+        
 
-        // GameObject (Background) skalieren
-        transform.localScale = new Vector3(width, height, 0);
+        if(gameObject.name == "Background") { 
+           //GameObject (Background) skalieren
+           transform.localScale = new Vector3(width, height, 0);
     }
+    else
+    transform.localScale = new Vector3(width, 2, 0);
+        
+    }
+
+
+             
+}
 
     // Update is called once per frame
     void Update()
