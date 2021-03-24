@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float jumpForce = 10f;
+    public float jumpForce = 8f;
 
     private Rigidbody2D myRB;
     // Start is called before the first frame update
