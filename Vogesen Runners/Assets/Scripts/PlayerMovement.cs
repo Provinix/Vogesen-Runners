@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -18,6 +19,12 @@ public class PlayerMovement : MonoBehaviour {
         myRB.velocity = new Vector2(0f, jumpForce);
     }
 
+void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.collider.tag !="Enemy") return;
+        Debug.Log("Blablabla");
+        //SceneManager.LoadScene("Lobby");
+    }
 
 
         
