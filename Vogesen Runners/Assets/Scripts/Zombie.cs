@@ -7,7 +7,7 @@ public class Zombie : MonoBehaviour {
     float dirX;
 
     [SerializeField]
-    float moveSpeed = 3f;
+    float moveSpeed = 9f;
 
     Rigidbody2D rb;
 

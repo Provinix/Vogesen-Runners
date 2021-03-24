@@ -22,8 +22,8 @@ public class PlayerMovement : MonoBehaviour {
 void OnCollisionEnter2D(Collision2D col)
     {
         if(col.collider.tag !="Enemy") return;
-        Debug.Log("Blablabla");
-        //SceneManager.LoadScene("Lobby");
+        
+        SceneManager.LoadScene("Lobby");
     }
 
 

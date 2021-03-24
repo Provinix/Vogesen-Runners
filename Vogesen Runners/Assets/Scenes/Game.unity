@@ -432,6 +432,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501632857}
   m_CullTransparentMesh: 1
+--- !u!1 &531473257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5324489856400842304, guid: d203e4523ec1a76498eec4734d43808b,
+    type: 3}
+  m_PrefabInstance: {fileID: 365148149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &531473263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531473257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9588eecff3b7334da44f8b4ffcc4565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
 --- !u!1 &757062453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1128,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush
       objectReference: {fileID: 0}
+    - target: {fileID: 7122105170407147632, guid: 449a139f23abc224ba9e01e4fb8db3ea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 449a139f23abc224ba9e01e4fb8db3ea, type: 3}
 --- !u!1 &1788306716
@@ -1270,7 +1294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788306716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.73, y: -3.88, z: 0}
+  m_LocalPosition: {x: -8.87, y: -4.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
