@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float jumpForce = 5f;
+    public float jumpForce = 10f;
 
     private Rigidbody2D myRB;
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour {
 void OnCollisionEnter2D(Collision2D col)
     {
         if(col.collider.tag !="Enemy") return;
-        
+
         SceneManager.LoadScene("Lobby");
     }
 
