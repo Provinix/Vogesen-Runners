@@ -15,7 +15,7 @@ public class BGLooper : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
         mat = GetComponent<Renderer> ().material;
-        offset = mat.GetTextureOffset (" _MainTex");
+        offset = mat.GetTextureOffset ("_MainTex");
         
     }
 
@@ -23,7 +23,7 @@ public class BGLooper : MonoBehaviour {
     void Update ()
     {
         offset.x = offset.x + speed * Time.deltaTime;
-        mat.SetTextureOffset (" _MainTex", offset);
+        mat.SetTextureOffset ("_MainTex", offset);
     }
 
     
