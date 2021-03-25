@@ -873,6 +873,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1542177258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 413478097834977809, guid: 5f9f87af3e60acc4b866d36b086bacbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 413478098276011791}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1584050388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,6 +1136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1621877318}
+  - component: {fileID: 1621877319}
   m_Layer: 0
   m_Name: Obstacle Spawner
   m_TagString: Untagged
@@ -1151,6 +1158,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621877319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621877317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e142858dba277ae40a5c24e827570579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 1542177258}
+  - {fileID: 531473257}
+  obstaclesToSpawn:
+  - {fileID: 531473257}
+  - {fileID: 1542177258}
 --- !u!1001 &1693172371
 PrefabInstance:
   m_ObjectHideFlags: 0
