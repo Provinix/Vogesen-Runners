@@ -111,3 +111,4 @@ Received Import Request.
 Start importing Assets/Scripts/ObstacleSpawner.cs using Guid(e142858dba277ae40a5c24e827570579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998420c4260b37e3a987de8253eb2d7d') in 0.009729 seconds
   Import took 0.017304 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
