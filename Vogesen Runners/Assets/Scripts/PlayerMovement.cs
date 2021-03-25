@@ -10,22 +10,34 @@ public class PlayerMovement : MonoBehaviour {
     public bool isGrounded;
     private bool canJump;
 
-    public Transform groundCheck;
-
-    public float groundCheckRadius;
-
-    public layerMask whatIsGround;
-
     private Rigidbody2D myRB;
+
+    private float jumpDelay;
     // Start is called before the first frame update
     void Start() {
         myRB = GetComponent<Rigidbody2D> ();
     }
 
+    void Update()
+    {
+        jumpDelay += Time.deltaTime;
+
+        if (transform.position.x < -10f || transform.position.y > 5f || transform.position.x > 10f)
+        {
+            SceneManager.LoadScene("Lobby");
+        }
+    }
+
+
     // Jump Funktion
     public void Jump()
     {
-        myRB.velocity = new Vector2(0f, jumpForce);
+        if (jumpDelay > 1.5f)
+        {
+            myRB.velocity = new Vector2(0f, jumpForce);
+
+            jumpDelay = 0;
+        }             
     }
 
 void OnCollisionEnter2D(Collision2D col)
@@ -42,13 +54,8 @@ void OnCollisionEnter2D(Collision2D col)
         SceneManager.LoadScene("Lobby");
     }*/
 
-    void Update(){
-        if(transform.position.x <-10f || transform.position.y >5f || transform.position.x >10f){
-            SceneManager.LoadScene("Lobby");
-        }
-    }
-
     
+  
 
 
 
