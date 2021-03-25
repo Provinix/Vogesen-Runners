@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BGScaler : MonoBehaviour {
+public class SkyScaler : MonoBehaviour {
     // Start is called before the first frame update
    
     void Start()
@@ -10,9 +10,9 @@ public class BGScaler : MonoBehaviour {
         // Höhe berechnen
         float height = Camera.main.orthographicSize * 2f;
         // Breite berechnen
-        float width = height * Screen.width / Screen.height * 10;
+        float width = height * Screen.width / Screen.height * 2;
 
-        if (gameObject.name == "Background") {
+        if (gameObject.name == "Sky") {
             //GameObject (Background) skalieren
             transform.localScale = new Vector3 (width, height, 0);
         } else

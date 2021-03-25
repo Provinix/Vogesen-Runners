@@ -4,9 +4,9 @@ using System.Diagnostics;
 using UnityEngine;
 
 
-public class BGLooper : MonoBehaviour {
+public class SkyLooper : MonoBehaviour {
 
-    public float speed = 0.05f;
+    public float speed = 0.001f;
 
     private Material mat;
     private Vector2 offset = Vector2.zero;
