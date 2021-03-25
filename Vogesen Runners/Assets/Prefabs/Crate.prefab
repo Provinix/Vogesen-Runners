@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 413478097834977838}
   - component: {fileID: 413478097834977839}
   - component: {fileID: 413478097834977808}
-  - component: {fileID: -519006637670977557}
+  - component: {fileID: -1356754755166426263}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -5
---- !u!114 &-519006637670977557
+--- !u!114 &-1356754755166426263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,6 +155,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 413478097834977809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfa1952739d5482449f6a797ab755249, type: 3}
+  m_Script: {fileID: 11500000, guid: ffb93dce122f91c4bb53367e76501995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: -1
