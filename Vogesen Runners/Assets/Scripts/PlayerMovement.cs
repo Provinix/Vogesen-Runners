@@ -20,11 +20,16 @@ public class PlayerMovement : MonoBehaviour {
 
     void Update()
     {
-        jumpDelay += Time.deltaTime;
+        jumpDelay -= Time.deltaTime;
 
         if (transform.position.x < -10f || transform.position.y > 5f || transform.position.x > 10f)
         {
             SceneManager.LoadScene("Lobby");
+        }
+
+        if (Input.GetKeyDown("space"))
+        {
+            Jump();
         }
     }
 
@@ -32,11 +37,11 @@ public class PlayerMovement : MonoBehaviour {
     // Jump Funktion
     public void Jump()
     {
-        if (jumpDelay > 1.5f)
+        if (jumpDelay <= 0f)
         {
             myRB.velocity = new Vector2(0f, jumpForce);
 
-            jumpDelay = 0;
+            jumpDelay = 1.5f;
         }             
     }
 
@@ -47,12 +52,7 @@ void OnCollisionEnter2D(Collision2D col)
         SceneManager.LoadScene("Lobby");
     }
 
-/*void OnTriggerEnter2D(Collider2D col)
-    {
-        if(col.tag !="Enemy") return;
 
-        SceneManager.LoadScene("Lobby");
-    }*/
 
     
   

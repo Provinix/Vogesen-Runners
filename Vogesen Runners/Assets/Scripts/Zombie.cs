@@ -36,7 +36,7 @@ public class Zombie : MonoBehaviour {
 
     void LateUpdate()
     {
-      CheckWhereToFace();
+      //CheckWhereToFace();
     }        
 
     void CheckWhereToFace()
