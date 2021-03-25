@@ -5,8 +5,8 @@ public class CoinPicker : MonoBehaviour
 
     private float coin = 0;
 
-    private void onTriggerEnter2D(Collider2D other) {
-        if(other.transform.tag == "Coin"){
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag == "Coin"){
             Destroy(other.gameObject);
         }
     }
