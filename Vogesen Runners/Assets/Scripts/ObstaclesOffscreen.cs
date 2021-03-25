@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class ObstaclesOffScreen : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D other)
+   void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Collector")
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive (false);
         }
-
-
     }
 }
