@@ -25,7 +25,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
         index = 0;
         // Initialisiere die Hindernisse
-        for (int i = 0; i < obstacles.Length * 25; i++)
+        for (int i = 0; i < obstacles.Length * 50; i++)
         {
             GameObject obj = Instantiate (obstacles [index], transform.position, Quaternion.identity);
             obstaclesToSpawn.Add (obj);

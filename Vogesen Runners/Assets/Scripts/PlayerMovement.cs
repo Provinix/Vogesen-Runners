@@ -7,6 +7,15 @@ public class PlayerMovement : MonoBehaviour {
 
     public float jumpForce = 8f;
 
+    public bool isGrounded;
+    private bool canJump;
+
+    public Transform groundCheck;
+
+    public float groundCheckRadius;
+
+    public layerMask whatIsGround;
+
     private Rigidbody2D myRB;
     // Start is called before the first frame update
     void Start() {
@@ -38,4 +47,13 @@ void OnCollisionEnter2D(Collision2D col)
             SceneManager.LoadScene("Lobby");
         }
     }
+
+    
+
+
+
+
+
+
+
 }
