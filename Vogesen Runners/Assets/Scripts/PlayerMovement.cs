@@ -26,6 +26,16 @@ void OnCollisionEnter2D(Collision2D col)
         SceneManager.LoadScene("Lobby");
     }
 
+/*void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag !="Enemy") return;
 
-        
+        SceneManager.LoadScene("Lobby");
+    }*/
+
+    void Update(){
+        if(transform.position.x <-10f || transform.position.y >5f || transform.position.x >10f){
+            SceneManager.LoadScene("Lobby");
+        }
+    }
 }
